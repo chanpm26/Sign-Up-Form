@@ -1,0 +1,173 @@
+body {
+    font-family: 'Sintony', 'Times New Roman', Times, serif;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    height: 100vh;
+}
+
+#sidebar {
+    background-image: url("candy.jpg");
+    background-size: 150vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    position: absolute;
+    font-size: 4vw;
+    border: solid pink 5px;
+    width: 100%;
+    height: min(150px, 50vh);
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 215, 222, 0.897);
+    font-family: 'Passion One', 'Times New Roman', Times, serif;
+}
+
+#logo > p {
+    color: rgb(252, 0, 0);
+    opacity: 100% !important;
+}
+
+#logo > img {
+    height: 20vh; 
+    margin-right: -20px;
+}
+
+#credit {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+#form-container {
+    background-color: rgb(248, 248, 248);
+    opacity: 80%;
+    padding: 10vh 0vh;
+}
+
+
+#form-header {
+    font-size: 1.5em;
+    padding: 5vh 25vh 5vh 15vh;
+    font-weight: bold;
+}
+
+#form {
+    background-color: rgb(255, 255, 255);
+    opacity: 90%;
+    padding: 0px 20px 20px 40px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 2px 5px 5px lightgray;
+    border: 1px solid lightgray;
+}
+
+#form > p {
+    font-size: 34px;
+    letter-spacing: 1.5px;
+    color:  rgb(143, 8, 8);
+    text-transform: uppercase;
+    font-family: 'Passion One', 'Times New Roman', Times, serif;
+}
+
+#form > p::after {
+    display: block;
+    content: "All forms are required.";
+    font-size: 17px;
+    font-family: 'Sintony', 'Times New Roman', Times, serif;
+    letter-spacing: 0px;
+    text-transform: initial;
+    font-style: italic;
+    color: black;
+}
+
+#form > div{
+    font-family: 'Passion One', 'Times New Roman', Times, serif;
+    display: flex;
+    gap: 20px;  
+    font-size: 20px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    gap: 60px;
+}
+
+
+#form > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+div > label {
+    text-transform:uppercase;
+}
+
+input {
+    height: 30px;
+    width: min(300px, 20vw);
+    border-radius: 5px;
+    border-color:rgb(248, 248, 248);
+}
+
+em {
+    color: red;
+}
+
+button {
+    background-color: rgb(143, 8, 8);
+    color: white;
+    border-color: rgb(143, 8, 8);
+    font-weight: bold;
+    padding: 15px 50px;
+    margin-left: 40px;
+    margin-top: 25px;
+    font-size: 20px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+#bottomText {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+input.error {
+    border-color: red;
+}
+
+input:focus {
+    border: solid rgba(31, 192, 255, 0.753);
+}
+
+input::placeholder {
+    font-size: 20px;
+}
+
+div.error::after {
+    content: "*Passwords do not match";
+    color: red;
+    display: block;
+    font-size: 15px;
+}
+
+label[for="password"]::after {
+    display: block;
+    font-size: 13px;
+    font-family: 'Sintony', 'Times New Roman', Times, serif;
+    letter-spacing: 0px;
+    text-transform: initial;
+    font-style: italic;
+    content: "Must be at least 8 characters long"
+}

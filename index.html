@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sign Up Form</title>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sintony&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <div id="container">
+
+        <div id="sidebar"> 
+            <div id="logo">
+                <img src="heart.png" alt="heart logo">
+                <p>Candylicious Co</p>
+            </div>
+            <div id="credit">
+                <p>Background by JACQUELINE BRANDWAYN on <a href="https://unsplash.com/photos/FYNs98upHrA"> Unsplash</a></p>
+                <p>Icon from <a href="http://clipart-library.com/clipart/RkiMyoycj.html"> Clipart Library </a></p>
+            </div>
+        </div>
+
+        <div id="form-container">
+            <div id="form-header">
+                <p> <text style="color:red"> Make your free account now!</text>
+                    By having an account, you can track your orders, earn reward
+                    points that can be redeemed for money off future orders, hear
+                    about exclusive deals, and more.
+                <p> What are you waiting for? Sign up now and enter the 
+                    sweet wonderland of <em>Candylicious Co!</em>
+                </p>
+            </div>
+            <div id="form">
+                <p>Sign Up Here</p>
+                <div>
+                    <div>
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" required minlength="1" maxlength="16" placeholder="Hailey">
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" required minlength="1" maxlength="16" placeholder="Bieber">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="haileybieber@gmail.com">
+                    </div>
+                    <div>
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" id="phoneNumber" required placeholder="888-888-8888">
+                    </div>
+                </div>
+                <div>
+                    <div class="error">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required minlength="8" class="error">
+                    </div>
+                    <div>
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" required minlength="8" class="error">
+                    </div>
+                </div>
+            </div>
+           
+             <button>Create Account</button>
+           
+            <div id="bottomText">
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+        </div>
+    </div>
+    <body></body>
+</html>
